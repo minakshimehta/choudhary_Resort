@@ -63,7 +63,7 @@ export default {
   position: relative;
   text-align: center;
   color: white;
-  background: url('@/assets/header-bg.jpg') no-repeat center center/cover;
+  /* background: url('@/assets/header-bg.jpg') no-repeat center center/cover; */
   height: 300px;
   display: flex;
   align-items: center;
