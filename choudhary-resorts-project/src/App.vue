@@ -5,7 +5,7 @@
         <div class="logo_text">
           Choudhary <span>Resorts</span>
         </div>
-        <ul :class="{ 'nav-links': true, 'nav-active': navActive }">
+        <ul :class="{ 'nav-links': true, 'nav-active': navActive }" @click="toggleNav">
           <li><router-link to="/">Home</router-link></li>
           <li><router-link to="/about">About</router-link></li>
           <li><router-link to="/services">Services</router-link></li>
@@ -40,6 +40,7 @@ export default {
   methods: {
     toggleNav() {
       this.navActive = !this.navActive;
+
     },
   },
 };
@@ -155,7 +156,7 @@ export default {
     padding-top: 80px;
     justify-content: flex-start;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    z-index: 3;
   }
 
   .nav-links.nav-active {
