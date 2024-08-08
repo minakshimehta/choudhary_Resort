@@ -155,6 +155,7 @@ export default {
     padding-top: 80px;
     justify-content: flex-start;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1;
   }
 
   .nav-links.nav-active {
