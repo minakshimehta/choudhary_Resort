@@ -75,6 +75,7 @@ export default {
   margin: 0 auto;
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
+  height: 40vh;
 }
 
 .about-card:hover {

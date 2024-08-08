@@ -17,10 +17,10 @@
         </div>
       </div>
     </section>
-    <section class="info">
+    <!-- <section class="info">
       <h2>Our Services</h2>
       <p>We offer a range of services to make your event memorable.</p>
-    </section>
+    </section> -->
   </div>
 </template>
 
@@ -96,7 +96,7 @@ export default {
 }
 
 .gallery {
-  margin-bottom: 20px;
+  margin-bottom: 5rem;
 }
 
 .gallery h2 {
@@ -111,6 +111,7 @@ export default {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+  margin-top: 2rem;
 }
 
 .card {

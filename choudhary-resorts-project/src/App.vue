@@ -10,14 +10,14 @@
           <li><router-link to="/about">About</router-link></li>
           <li><router-link to="/services">Services</router-link></li>
           <li><router-link to="/weddings">Weddings & Events</router-link></li>
-          <li><router-link to="/contact">Contact</router-link></li>
+          <li><router-link to="/contact">Contact Us</router-link></li>
         </ul>
         <div class="burger" @click="toggleNav">
           <div class="line1"></div>
           <div class="line2"></div>
           <div class="line3"></div>
         </div>
-        <button class="book-btn">Book Now</button>
+        <!-- <button class="book-btn">Book Now</button> -->
       </nav>
     </header>
     <main>
