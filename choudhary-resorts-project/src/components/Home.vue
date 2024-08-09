@@ -1,13 +1,17 @@
 <template>
   <div class="home">
     <div class="hero-image">
-      <img src="../assets/crB1.png" alt="Resort" class="main-image" />
+      <img src="../assets/crB1.jpg" alt="Resort" class="main-image" />
     </div>
     <div class="content-section">
       <div class="intro-content">
         <h1>Welcome to Choudhary Resorts</h1>
         <p class="intro-text">
-          Experience luxury and serenity like never before. Choudhary Resorts is the ultimate destination for those seeking an unforgettable escape. Our resort is designed to offer you a perfect blend of natural beauty and top-tier amenities, ensuring a stay that is both relaxing and rejuvenating.
+          Experience luxury and serenity like never before. Choudhary Resorts is
+          the ultimate destination for those seeking an unforgettable escape.
+          Our resort is designed to offer you a perfect blend of natural beauty
+          and top-tier amenities, ensuring a stay that is both relaxing and
+          rejuvenating.
         </p>
         <div class="highlighted-features">
           <div class="feature">
@@ -17,7 +21,8 @@
             </video>
             <h3>Elegant Weddings</h3>
             <p>
-              Celebrate your special day in style with our beautifully designed venues and personalized services.
+              Celebrate your special day in style with our beautifully designed
+              venues and personalized services.
             </p>
           </div>
           <div class="feature">
@@ -27,23 +32,32 @@
             </video>
             <h3>Our Wedding Venues</h3>
             <p>
-              Watch a glimpse of our stunning wedding venues and envision your dream event coming to life.
+              Watch a glimpse of our stunning wedding venues and envision your
+              dream event coming to life.
             </p>
           </div>
           <div class="feature">
-            <img src="../assets/catering.jpeg" alt="Catering" class="feature-media" />
+            <img
+              src="../assets/catering.jpeg"
+              alt="Catering"
+              class="feature-media"
+            />
             <h3>Exquisite Catering</h3>
             <p>
-              Delight your guests with our bespoke catering services, offering a wide range of culinary delights to suit every palate.
+              Delight your guests with our bespoke catering services, offering a
+              wide range of culinary delights to suit every palate.
             </p>
           </div>
         </div>
       </div>
-     
-   
+    
     </div>
+    
   </div>
+  
 </template>
+
+
 
 
 
@@ -55,8 +69,8 @@ export default {
       form: {
         name: "",
         email: "",
-        message: ""
-      }
+        message: "",
+      },
     };
   },
   methods: {
@@ -66,8 +80,8 @@ export default {
       this.form.name = "";
       this.form.email = "";
       this.form.message = "";
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -152,8 +166,6 @@ h1 {
   color: #666;
 }
 
-
-
 .details-content h2 {
   font-size: 2.8em;
   margin-bottom: 1em;
@@ -185,13 +197,9 @@ h1 {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-
-
-
 .form-group {
   margin-bottom: 20px;
 }
-
 
 label {
   display: block;
@@ -199,7 +207,10 @@ label {
   margin-bottom: 5px;
 }
 
-input, textarea, input, textarea {
+input,
+textarea,
+input,
+textarea {
   width: 100%;
   padding: 12px;
   border-radius: 8px;
@@ -236,8 +247,6 @@ textarea {
   .content-section {
     padding: 20px;
   }
-
-
 }
 </style>
 
