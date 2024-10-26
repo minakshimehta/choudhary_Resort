@@ -43,6 +43,7 @@
               class="feature-media"
             />
             <h3>Exquisite Catering</h3>
+            
             <p>
               Delight your guests with our bespoke catering services, offering a
               wide range of culinary delights to suit every palate.

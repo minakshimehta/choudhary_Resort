@@ -44,18 +44,18 @@ export default {
   methods: {
     handleSubmit() {
       const templateParams = {
-        from_name: this.form.name,     // Ensure these keys match the placeholders in your EmailJS template
-        from_email: this.form.email,   // Ensure these keys match the placeholders in your EmailJS template
-        phone_number: this.form.phone, // New field for mobile number
-        message: this.form.message      // Ensure these keys match the placeholders in your EmailJS template
+        from_name: this.form.name,
+        from_email: this.form.email,
+        phone_number: this.form.phone,
+        message: this.form.message
       };
 
-      emailjs.send('redroseCatering', 'template_l2qo43a', templateParams, '6ZorTF5xZM7FurpoM')
+      emailjs.send('your_service_id', 'your_template_id', templateParams, 'your_user_id')
         .then(response => {
           alert('Message sent successfully!');
           this.form.name = "";
           this.form.email = "";
-          this.form.phone = ""; // Clear the phone number field
+          this.form.phone = "";
           this.form.message = "";
         })
         .catch(error => {
@@ -69,7 +69,7 @@ export default {
 
 <style scoped>
 .contact-container {
-  background-color: #f2f2f2; /* Light grey background */
+  background-color: #f2f2f2;
   padding: 50px 20px;
   border-radius: 10px;
   max-width: 600px;
@@ -79,7 +79,7 @@ export default {
 
 .contact-header h2 {
   font-size: 2.5em;
-  color: #4a90e2; /* Soft blue */
+  color: #4a90e2;
   margin-bottom: 10px;
   text-align: center;
 }
@@ -92,7 +92,7 @@ export default {
 }
 
 .contact-form {
-  background-color: #ffffff; /* White background */
+  background-color: #ffffff;
   padding: 30px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -105,7 +105,7 @@ export default {
 label {
   display: block;
   font-weight: 600;
-  color: #4a90e2; /* Soft blue */
+  color: #4a90e2;
   margin-bottom: 8px;
 }
 
@@ -127,8 +127,8 @@ textarea {
 
 .submit-btn {
   width: 100%;
-  background-color: #4a90e2; /* Soft blue */
-  color: #ffffff; /* White text */
+  background-color: #4a90e2;
+  color: #ffffff;
   padding: 15px;
   border: none;
   border-radius: 8px;
@@ -138,7 +138,7 @@ textarea {
 }
 
 .submit-btn:hover {
-  background-color: #357abf; /* Darker blue */
+  background-color: #357abf;
 }
 
 /* Responsive Design */

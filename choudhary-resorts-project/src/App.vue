@@ -17,7 +17,6 @@
           <div class="line2"></div>
           <div class="line3"></div>
         </div>
-        <!-- <button class="book-btn">Book Now</button> -->
       </nav>
     </header>
     <main>
@@ -40,24 +39,29 @@ export default {
   methods: {
     toggleNav() {
       this.navActive = !this.navActive;
-
     },
   },
 };
 </script>
 
-<style>
+<style scoped>
 #app {
   font-family: Helvetica, Arial, sans-serif;
   text-align: center;
   color: #2c3e50;
   margin: 0;
+  padding-top: 60px; /* Adjust to avoid content being hidden behind the fixed header */
 }
 
 .header {
   background: linear-gradient(90deg, #084341, #0a4f50);
   padding: 15px 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
 .navbar {
@@ -183,9 +187,6 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-}
-body {
-  display: block;
-  margin: 0;
+  z-index: 1000;
 }
 </style>
