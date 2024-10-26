@@ -2,7 +2,11 @@
   <div class="services">
     <h1>Our Services</h1>
     <div class="services-tabs">
-      <el-tabs v-model="activeName" class="custom-tabs" @tab-click="handleClick">
+      <el-tabs
+        v-model="activeName"
+        class="custom-tabs"
+        @tab-click="handleClick"
+      >
         <!-- Rooms Tab -->
         <el-tab-pane name="rooms">
           <template #label>
@@ -13,11 +17,23 @@
           </template>
           <div class="tab-content room-panel">
             <div class="room-image">
-              <img src="https://alacritys.in/wp-content/uploads/2023/06/Hotel-Room-Interior-Design-8.webp" alt="Luxury Room" @click="showImageFullScreen('https://alacritys.in/wp-content/uploads/2023/06/Hotel-Room-Interior-Design-8.webp')" />
+              <img
+                src="https://alacritys.in/wp-content/uploads/2023/06/Hotel-Room-Interior-Design-8.webp"
+                alt="Luxury Room"
+                @click="
+                  showImageFullScreen(
+                    'https://alacritys.in/wp-content/uploads/2023/06/Hotel-Room-Interior-Design-8.webp'
+                  )
+                "
+              />
             </div>
             <div class="room-description">
               <h2>Luxury Rooms</h2>
-              <p>Experience the ultimate comfort in our elegantly designed rooms equipped with modern amenities. Our rooms provide a perfect blend of luxury and tranquility, ensuring a memorable stay.</p>
+              <p>
+                Experience the ultimate comfort in our elegantly designed rooms
+                equipped with modern amenities. Our rooms provide a perfect
+                blend of luxury and tranquility, ensuring a memorable stay.
+              </p>
               <ul>
                 <li>Spacious and elegantly furnished</li>
                 <li>High-speed Wi-Fi access</li>
@@ -38,11 +54,24 @@
           </template>
           <div class="tab-content parking-panel">
             <div class="parking-image">
-              <img src="https://watermark.lovepik.com/photo/20211126/large/lovepik-indoor-parking-lot-picture_501142116.jpg" alt="Spacious Parking" @click="showImageFullScreen('https://watermark.lovepik.com/photo/20211126/large/lovepik-indoor-parking-lot-picture_501142116.jpg')" />
+              <img
+                src="https://watermark.lovepik.com/photo/20211126/large/lovepik-indoor-parking-lot-picture_501142116.jpg"
+                alt="Spacious Parking"
+                @click="
+                  showImageFullScreen(
+                    'https://watermark.lovepik.com/photo/20211126/large/lovepik-indoor-parking-lot-picture_501142116.jpg'
+                  )
+                "
+              />
             </div>
             <div class="parking-description">
               <h2>Spacious Parking</h2>
-              <p>We offer secure and ample parking for all our guests. Whether you arrive in a small car or a large vehicle, our parking facilities are designed to accommodate all your needs with ease and safety.</p>
+              <p>
+                We offer secure and ample parking for all our guests. Whether
+                you arrive in a small car or a large vehicle, our parking
+                facilities are designed to accommodate all your needs with ease
+                and safety.
+              </p>
               <ul>
                 <li>24/7 surveillance and security</li>
                 <li>Electric vehicle charging stations</li>
@@ -64,7 +93,11 @@
           <div class="tab-content events-panel">
             <div class="events-description">
               <h2>Events & Celebrations</h2>
-              <p>We offer the perfect venues for all your celebrations. From traditional ceremonies to modern parties, we provide a memorable experience for every occasion.</p>
+              <p>
+                We offer the perfect venues for all your celebrations. From
+                traditional ceremonies to modern parties, we provide a memorable
+                experience for every occasion.
+              </p>
 
               <el-tabs v-model="activeEventTab">
                 <!-- Mehndi Party -->
@@ -73,7 +106,15 @@
                     <span>Mehndi Party</span>
                   </template>
                   <div class="event-gallery">
-                    <img src="https://ik.imagekit.io/pu0hxo64d/uploads/gallery/tr:w-450,h-250/bollywood-theme-party-at-the-manor-900.jpg" alt="Mehndi Party 1" @click="showImageFullScreen('https://ik.imagekit.io/pu0hxo64d/uploads/gallery/tr:w-450,h-250/bollywood-theme-party-at-the-manor-900.jpg')" />
+                    <img
+                      src="https://ik.imagekit.io/pu0hxo64d/uploads/gallery/tr:w-450,h-250/bollywood-theme-party-at-the-manor-900.jpg"
+                      alt="Mehndi Party 1"
+                      @click="
+                        showImageFullScreen(
+                          'https://ik.imagekit.io/pu0hxo64d/uploads/gallery/tr:w-450,h-250/bollywood-theme-party-at-the-manor-900.jpg'
+                        )
+                      "
+                    />
                   </div>
                 </el-tab-pane>
 
@@ -83,7 +124,15 @@
                     <span>Haldi Party</span>
                   </template>
                   <div class="event-gallery">
-                    <img src="https://www.rurbanresort.com/images/event/1716216659_haldi.jpg" alt="Haldi Party 1" @click="showImageFullScreen('https://www.rurbanresort.com/images/event/1716216659_haldi.jpg')" />
+                    <img
+                      src="https://www.rurbanresort.com/images/event/1716216659_haldi.jpg"
+                      alt="Haldi Party 1"
+                      @click="
+                        showImageFullScreen(
+                          'https://www.rurbanresort.com/images/event/1716216659_haldi.jpg'
+                        )
+                      "
+                    />
                   </div>
                 </el-tab-pane>
 
@@ -93,7 +142,15 @@
                     <span>Shadi</span>
                   </template>
                   <div class="event-gallery">
-                    <img src="https://media.weddingz.in/photologue/images/mubark-haveli-new-chandigarh-chandigarh.jpg" alt="Shadi 1" @click="showImageFullScreen('https://media.weddingz.in/photologue/images/mubark-haveli-new-chandigarh-chandigarh.jpg')" />
+                    <img
+                      src="https://media.weddingz.in/photologue/images/mubark-haveli-new-chandigarh-chandigarh.jpg"
+                      alt="Shadi 1"
+                      @click="
+                        showImageFullScreen(
+                          'https://media.weddingz.in/photologue/images/mubark-haveli-new-chandigarh-chandigarh.jpg'
+                        )
+                      "
+                    />
                   </div>
                 </el-tab-pane>
 
@@ -103,7 +160,15 @@
                     <span>Birthday Party</span>
                   </template>
                   <div class="event-gallery">
-                    <img src="https://vmnk.gumlet.io/assets/delhi/five-elements-by-sandoz-janakpuri/images/original/five-elements-by-sandoz-janakpuri-23gdi.jpg?h=300&w=368" alt="Birthday Party 1" @click="showImageFullScreen('https://vmnk.gumlet.io/assets/delhi/five-elements-by-sandoz-janakpuri/images/original/five-elements-by-sandoz-janakpuri-23gdi.jpg?h=300&w=368')" />
+                    <img
+                      src="https://vmnk.gumlet.io/assets/delhi/five-elements-by-sandoz-janakpuri/images/original/five-elements-by-sandoz-janakpuri-23gdi.jpg?h=300&w=368"
+                      alt="Birthday Party 1"
+                      @click="
+                        showImageFullScreen(
+                          'https://vmnk.gumlet.io/assets/delhi/five-elements-by-sandoz-janakpuri/images/original/five-elements-by-sandoz-janakpuri-23gdi.jpg?h=300&w=368'
+                        )
+                      "
+                    />
                   </div>
                 </el-tab-pane>
               </el-tabs>
@@ -124,7 +189,7 @@
 </template>
 
 <script>
-import VueEasyLightbox from 'vue-easy-lightbox';
+import VueEasyLightbox from "vue-easy-lightbox";
 
 export default {
   components: {
@@ -132,8 +197,8 @@ export default {
   },
   data() {
     return {
-      activeName: 'rooms',
-      activeEventTab: 'mehndi', // Default to Mehndi in Events
+      activeName: "rooms",
+      activeEventTab: "mehndi", // Default to Mehndi in Events
       visible: false, // Lightbox visibility
       lightboxImages: [],
       lightboxIndex: 0, // Index of the clicked image
@@ -141,7 +206,7 @@ export default {
   },
   methods: {
     handleClick(tab) {
-      console.log('Tab clicked:', tab);
+      console.log("Tab clicked:", tab);
     },
     showImageFullScreen(imgUrl) {
       this.lightboxImages = [imgUrl]; // Only showing the clicked image
@@ -154,10 +219,6 @@ export default {
 
 <style scoped>
 /* (Your existing styles) */
-</style>
-
-
-<style scoped>
 .services {
   padding: 20px;
   background: #f9f9f9;
@@ -208,7 +269,6 @@ h1 {
   margin-top: 15px;
   display: flex;
   flex-wrap: nowrap !important;
-  align-items: center;
 }
 
 /* Adjust panels for smaller screens */
@@ -236,104 +296,76 @@ h1 {
 .parking-description h2 {
   font-size: 1.5rem;
   margin-bottom: 10px;
-  color: #333;
-}
-
-.room-description p,
-.parking-description p {
-  font-size: 1rem;
-  margin-bottom: 15px;
-  color: #666;
+  color: #007bff;
 }
 
 .room-description ul,
 .parking-description ul {
-  list-style: none;
-  padding: 0;
-}
-
-.room-description li,
-.parking-description li {
-  font-size: 0.9rem;
-  padding: 8px 0;
-  border-bottom: 1px solid #eee;
-  color: #555;
-}
-
-/* Events Panel Styles */
-.events-panel {
-  text-align: center;
-}
-
-.events-description h2 {
-  font-size: 1.8rem;
-  margin-bottom: 10px;
-  color: #333;
-}
-
-.events-description p {
-  font-size: 1rem;
-  margin-bottom: 15px;
-  color: #666;
+  text-align: left;
+  margin: 0;
+  padding-left: 20px;
 }
 
 .event-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 10px;
-  width: 100%;
 }
 
 .event-gallery img {
-  width: 100%;
+  width: calc(25% - 10px); /* Four images in a row with spacing */
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  object-fit: cover;
-  height: 120px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
 }
 
-/* Media Query for mobile devices */
+.event-gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive styles */
 @media (max-width: 768px) {
-  h1 {
-    font-size: 1.8rem;
+  .tab-content {
+    flex-direction: column; /* Stack on small screens */
+  }
+
+  .room-panel,
+  .parking-panel {
+    flex-direction: column; /* Stack on small screens */
+  }
+
+  .event-gallery img {
+    width: calc(50% - 10px); /* Two images in a row */
+  }
+}
+
+@media (max-width: 480px) {
+  .event-gallery img {
+    width: 100%; /* Single image on very small screens */
   }
 
   .tab-content {
-    flex-direction: column;
-    padding: 15px;
+    padding: 10px;
   }
 
-  .custom-tabs-label {
-    font-size: 0.9rem;
-  }
-
-  .room-image img,
-  .parking-image img {
-    max-width: 100%;
+  h1 {
+    font-size: 1.5rem;
   }
 
   .room-description h2,
   .parking-description h2 {
-    font-size: 1.4rem;
-  }
-
-  .room-description p,
-  .parking-description p {
-    font-size: 0.95rem;
-  }
-
-  .events-description h2 {
-    font-size: 1.6rem;
-  }
-
-  .event-gallery {
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  }
-
-  .event-gallery img {
-    height: 100px;
+    font-size: 1.25rem;
   }
 }
+</style>
 
-
+<style>
+.vel-icon {
+  fill: currentColor;
+  height: 2em;
+  overflow: hidden;
+  vertical-align: -0.15em;
+  width: 2em;
+  color: black;
+}
 </style>
