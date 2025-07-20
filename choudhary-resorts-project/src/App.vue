@@ -23,7 +23,7 @@
       <router-view />
     </main>
     <footer>
-      <p>&copy; 2024 Choudhary Resorts. All rights reserved.</p>
+      <p>&copy; 2025 Choudhary Resorts.</p>
     </footer>
   </div>
 </template>
