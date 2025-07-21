@@ -1,109 +1,214 @@
 <template>
-  <div class="about">
-    <div class="details-content">
-      <h2>About Us</h2>
-      <div class="about-animation">
-        <div class="about-card">
-          <h3>Our Story</h3>
+  <section class="about-resort">
+    <div class="container">
+      <div class="content">
+        <div class="image-section">
+          <img src="../assets/about_FP.jpg" alt="Choudhary Resorts" />
+        </div>
+        <div class="text-section">
+          <h2>
+            Discover the Essence of
+            <span>Choudhary Resorts</span>
+          </h2>
           <p>
-            Choudhary Resorts is a premier destination for those seeking a picturesque setting for their special occasions. Our resort features elegantly designed venues, top-notch facilities, and unparalleled service. Whether you are planning a grand wedding, a corporate event, or a relaxing getaway, we have something for everyone.
+            Choudhary Resorts blends elegance, luxury, and tradition to create
+            the perfect destination for your most cherished events. From royal
+            weddings to private functions, our serene surroundings and
+            exceptional services will leave a lasting impression.
+          </p>
+          <ul class="features">
+            <li>✔️ Spacious banquet and lawn area</li>
+            <li>✔️ Custom decor and lighting setup</li>
+            <li>✔️ Premium hospitality and staff</li>
+            <li>✔️ In-house catering with multi-cuisine options</li>
+          </ul>
+          <a href="#services" class="btn-learn">Explore Our Services</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 📸 Photo & Video Gallery Section -->
+    <div class="gallery-section">
+      <h3>Gallery</h3>
+      <div class="gallery-grid">
+        <img src="../assets/G1.jpg" alt="Event 1" />
+        <img src="../assets/G2.jpg" alt="Event 2" />
+        <img src="../assets/G3.jpg" alt="Event 3" />
+        <img src="../assets/G4.jpg" alt="Event 4" />
+      </div>
+    </div>
+
+    <!-- 🎉 Event Packages Section -->
+    <div class="packages-section">
+      <h3>Event Packages</h3>
+      <div class="package-list">
+        <div class="package">
+          <img src="../assets/classic_W.jpg" alt="Classic Wedding" class="package-icon" />
+          <h4>Classic Wedding</h4>
+          <p>
+            Includes venue, decoration, catering, and music for up to 300 guests.
           </p>
         </div>
-        <div class="about-card">
-          <h3>Our Facilities</h3>
+
+        <div class="package">
+          <img src="../assets/Corporate-Retreat.jpg" alt="Corporate Retreat" class="package-icon" />
+          <h4>Corporate Retreat</h4>
+          <p>Ideal for business events and team-building activities.</p>
+        </div>
+
+        <div class="package">
+          <img src="../assets/Wedding_Packages.jpg" alt="Wedding Packages" class="package-icon" />
+          <h4>Wedding Packages</h4>
           <p>
-            Our sprawling grounds include beautifully landscaped gardens, luxurious suites, and state-of-the-art conference rooms. Each space is meticulously designed to offer comfort and style, ensuring that your experience with us is nothing short of extraordinary.
+            Make your special day unforgettable with our elegant and customizable wedding packages.
           </p>
         </div>
-        <div class="about-card">
-          <h3>Our Commitment</h3>
+
+        <div class="package">
+          <img src="../assets/Birthday_Parties.jpg" alt="Birthday Parties" class="package-icon" />
+          <h4>Birthday Parties</h4>
           <p>
-            We pride ourselves on our attention to detail and our commitment to making your event memorable. From intimate gatherings to grand celebrations, our dedicated team works closely with you to bring your vision to life.
+            Celebrate in style with our fun-filled birthday party packages for all ages!
+          </p>
+        </div>
+
+        <div class="package">
+          <img src="../assets/Surprise_Party.jpg" alt="Surprise Gifts" class="package-icon" />
+          <h4>Surprise Party</h4>
+          <p>
+            Delight your loved ones with the perfect surprise gift for any occasion.
+          </p>
+        </div>
+
+        <div class="package">
+          <img src="../assets/Indoor_Outdoor_Events.jpg" alt="Indoor & Outdoor Events" class="package-icon" />
+          <h4>Indoor & Outdoor Events</h4>
+          <p>
+            From intimate indoor gatherings to grand outdoor celebrations, we’ve got you covered.
+          </p>
+        </div>
+
+        <div class="package">
+          <img src="../assets/Anniversary_Celebration.jpg" alt="Anniversary Celebration" class="package-icon" />
+          <h4>Anniversary Celebration</h4>
+          <p>
+            Celebrate love and togetherness with luxurious anniversary event packages and entertainment.
           </p>
         </div>
       </div>
-      <p class="about-summary">
-        Experience the charm and elegance of Choudhary Resorts and create lasting memories with your loved ones. Contact us today to learn more about our offerings and to book your visit.
-      </p>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
 export default {
-  name: "About",
+  name: "AboutResort",
 };
 </script>
 
 <style scoped>
-.about {
-  background-color: #f9f9f9;
-  padding: 60px 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+.about-resort {
+  padding: 3rem 1rem;
+  background-color: #fff;
 }
 
-.details-content {
-  max-width: 1000px;
-  margin-bottom: 60px;
-  text-align: center;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.details-content h2 {
-  font-size: 2.8em;
-  margin-bottom: 1em;
-  color: #444;
-  border-bottom: 2px solid #007bff;
-  padding-bottom: 10px;
-}
-
-.about-animation {
+.content {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 30px;
+  gap: 2rem;
+  align-items: center;
 }
 
-.about-card {
-  background: #fff;
+.image-section {
+  flex: 1;
+}
+.image-section img {
+  max-width: 100%;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  max-width: 300px;
-  margin: 0 auto;
+}
+
+.text-section {
+  flex: 1;
+}
+.text-section h2 {
+  font-size: 2rem;
+  color: #333;
+}
+.text-section h2 span {
+  color: #ff4d6d;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+.features li {
+  margin: 0.5rem 0;
+}
+
+.btn-learn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1.5rem;
+  background: #ff4d6d;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+.btn-learn:hover {
+  background: #e6445d;
+}
+
+/* Gallery Section */
+.gallery-section,
+.packages-section {
+  margin-top: 4rem;
   text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
-  height: 40vh;
 }
 
-.about-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
-.card-icon {
-  font-size: 2.5em;
-  color: #007bff;
-  margin-bottom: 15px;
+.gallery-grid img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+.gallery-grid img:hover {
+  transform: scale(1.03);
 }
 
-.about-card h3 {
-  font-size: 1.8em;
-  margin-bottom: 10px;
-  color: #007bff;
+/* Packages Section */
+.package-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
 }
-
-.about-card p {
-  font-size: 1.1em;
-  color: #555;
-  line-height: 1.6;
+.package {
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
 }
-
-.about-summary {
-  font-size: 1.2em;
-  color: #666;
-  line-height: 1.8;
+.package-icon {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
 }
 </style>
