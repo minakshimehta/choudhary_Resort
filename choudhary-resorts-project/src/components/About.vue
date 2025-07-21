@@ -2,28 +2,30 @@
   <section class="about-resort">
     <div class="container">
       <div class="content">
-        <div class="image-section">
-          <img src="../assets/about_FP.jpg" alt="Choudhary Resorts" />
-        </div>
-        <div class="text-section">
-          <h2>
-            Discover the Essence of
-            <span>Choudhary Resorts</span>
-          </h2>
-          <p>
-            Choudhary Resorts blends elegance, luxury, and tradition to create
-            the perfect destination for your most cherished events. From royal
-            weddings to private functions, our serene surroundings and
-            exceptional services will leave a lasting impression.
-          </p>
-          <ul class="features">
-            <li>✔️ Spacious banquet and lawn area</li>
-            <li>✔️ Custom decor and lighting setup</li>
-            <li>✔️ Premium hospitality and staff</li>
-            <li>✔️ In-house catering with multi-cuisine options</li>
-          </ul>
-          <a href="#services" class="btn-learn">Explore Our Services</a>
-        </div>
+     <div class="content reverse-layout">
+  <div class="text-section">
+    <h2>
+      Discover the Essence of
+      <span>Choudhary Resorts</span>
+    </h2>
+    <p>
+      Choudhary Resorts blends elegance, luxury, and tradition to create
+      the perfect destination for your most cherished events. From royal
+      weddings to private functions, our serene surroundings and exceptional
+      services will leave a lasting impression.
+    </p>
+    <ul class="features">
+      <li>✔️ Spacious banquet and lawn area</li>
+      <li>✔️ Custom decor and lighting setup</li>
+      <li>✔️ Premium hospitality and staff</li>
+      <li>✔️ In-house catering with multi-cuisine options</li>
+    </ul>
+    <a href="#services" class="btn-learn">Explore Our Services</a>
+  </div>
+  <div class="image-section">
+    <img src="../assets/about_FP.jpg" alt="Choudhary Resorts" />
+  </div>
+</div>
       </div>
     </div>
 
@@ -45,9 +47,7 @@
         <div class="package">
           <img src="../assets/classic_W.jpg" alt="Classic Wedding" class="package-icon" />
           <h4>Classic Wedding</h4>
-          <p>
-            Includes venue, decoration, catering, and music for up to 300 guests.
-          </p>
+          <p>Includes venue, decoration, catering, and music for up to 300 guests.</p>
         </div>
 
         <div class="package">
@@ -59,41 +59,37 @@
         <div class="package">
           <img src="../assets/Wedding_Packages.jpg" alt="Wedding Packages" class="package-icon" />
           <h4>Wedding Packages</h4>
-          <p>
-            Make your special day unforgettable with our elegant and customizable wedding packages.
-          </p>
+          <p>Make your special day unforgettable with our elegant and customizable wedding packages.</p>
         </div>
 
         <div class="package">
           <img src="../assets/Birthday_Parties.jpg" alt="Birthday Parties" class="package-icon" />
           <h4>Birthday Parties</h4>
-          <p>
-            Celebrate in style with our fun-filled birthday party packages for all ages!
-          </p>
+          <p>Celebrate in style with our fun-filled birthday party packages for all ages!</p>
         </div>
 
         <div class="package">
-          <img src="../assets/Surprise_Party.jpg" alt="Surprise Gifts" class="package-icon" />
+          <img src="../assets/Surprise_Party.jpg" alt="Surprise Party" class="package-icon" />
           <h4>Surprise Party</h4>
-          <p>
-            Delight your loved ones with the perfect surprise gift for any occasion.
-          </p>
+          <p>Delight your loved ones with the perfect surprise gift for any occasion.</p>
         </div>
 
         <div class="package">
           <img src="../assets/Indoor_Outdoor_Events.jpg" alt="Indoor & Outdoor Events" class="package-icon" />
           <h4>Indoor & Outdoor Events</h4>
-          <p>
-            From intimate indoor gatherings to grand outdoor celebrations, we’ve got you covered.
-          </p>
+          <p>From intimate indoor gatherings to grand outdoor celebrations, we’ve got you covered.</p>
         </div>
 
         <div class="package">
           <img src="../assets/Anniversary_Celebration.jpg" alt="Anniversary Celebration" class="package-icon" />
           <h4>Anniversary Celebration</h4>
-          <p>
-            Celebrate love and togetherness with luxurious anniversary event packages and entertainment.
-          </p>
+          <p>Celebrate love and togetherness with luxurious anniversary event packages and entertainment.</p>
+        </div>
+
+        <div class="package">
+          <img src="../assets/Satsang_Events.jpg" alt="Satsang Event" class="package-icon" />
+          <h4>Satsang Events</h4>
+          <p>Peaceful devotional gatherings with audio setup, seating, and refreshments for devotees.</p>
         </div>
       </div>
     </div>
@@ -106,7 +102,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<<style scoped>
 .about-resort {
   padding: 3rem 1rem;
   background-color: #fff;
@@ -117,30 +113,47 @@ export default {
   margin: 0 auto;
 }
 
+/* Updated content layout */
 .content {
   display: flex;
-  flex-wrap: wrap;
+    flex-wrap: nowrap;
   gap: 2rem;
   align-items: center;
 }
 
-.image-section {
-  flex: 1;
+/* 50-50 layout on desktop */
+.image-section,
+.text-section {
+  flex: 1 1 50%;
 }
+
+/* Full width on mobile */
+@media (max-width: 768px) {
+  .image-section,
+  .text-section {
+    flex: 1 1 100%;
+  }
+}
+
 .image-section img {
-  max-width: 100%;
+  width: 100%;
   border-radius: 10px;
 }
 
-.text-section {
-  flex: 1;
-}
 .text-section h2 {
   font-size: 2rem;
   color: #333;
 }
+
 .text-section h2 span {
   color: #ff4d6d;
+}
+
+.text-section p {
+  margin-top: 1rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
 }
 
 .features {
@@ -150,6 +163,8 @@ export default {
 }
 .features li {
   margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #333;
 }
 
 .btn-learn {
@@ -171,6 +186,11 @@ export default {
 .packages-section {
   margin-top: 4rem;
   text-align: center;
+}
+.gallery-section h3,
+.packages-section h3 {
+  font-size: 2rem;
+  color: #ff4d6d;
 }
 
 .gallery-grid {
@@ -211,4 +231,42 @@ export default {
   border-radius: 8px;
   margin-bottom: 1rem;
 }
+
+/* 📱 Responsive Tweaks */
+@media (max-width: 768px) {
+  .text-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .features li {
+    font-size: 0.95rem;
+  }
+
+  .btn-learn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .gallery-grid img {
+    height: 160px;
+  }
+
+  .package-icon {
+    height: 160px;
+  }
+}
+.reverse-layout {
+  flex-direction: row-reverse;
+}
+@media (max-width: 768px) {
+  .reverse-layout {
+    flex-direction: column;
+  }
+.content {
+
+    flex-wrap: wrap;
+
+}
+}
+
 </style>
